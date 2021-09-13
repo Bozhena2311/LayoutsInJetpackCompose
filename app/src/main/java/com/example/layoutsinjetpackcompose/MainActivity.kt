@@ -12,6 +12,7 @@ import androidx.compose.runtime.Stable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.*
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.*
@@ -75,7 +76,7 @@ private class PaddingModifier(
 fun BodyContent(modifier: Modifier = Modifier) {
     Row(
         modifier = modifier
-            .background(color = Color.LightGray)
+            .background(color = Color.LightGray, shape = RectangleShape)
             .size(200.dp)
             .padding(16.dp)
             .horizontalScroll(rememberScrollState())
